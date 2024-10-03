@@ -18,6 +18,27 @@ This project provides an in-depth analysis of the Netflix dataset using SQL. The
 
 The dataset used for this project can be found on [Kaggle - Netflix Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download). It contains data on Movies and TV Shows available on Netflix, including details such as title, country, release year, rating, and more.
 
+## Schema
+
+```sql
+DROP TABLE IF EXISTS netflix;
+CREATE TABLE netflix
+(
+    show_id      VARCHAR(5),
+    type         VARCHAR(10),
+    title        VARCHAR(250),
+    director     VARCHAR(550),
+    casts        VARCHAR(1050),
+    country      VARCHAR(550),
+    date_added   VARCHAR(55),
+    release_year INT,
+    rating       VARCHAR(15),
+    duration     VARCHAR(15),
+    listed_in    VARCHAR(250),
+    description  VARCHAR(550)
+);
+```
+
 ## SQL Queries and Solutions
 
 ### 1. Count the Number of Movies vs TV Shows
