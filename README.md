@@ -18,26 +18,25 @@ This project provides an in-depth analysis of the Netflix dataset using SQL. The
 
 The dataset used for this project can be found on [Kaggle - Netflix Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download). It contains data on Movies and TV Shows available on Netflix, including details such as title, country, release year, rating, and more.
 
-## Schema
+### Schema
 
-```sql
-DROP TABLE IF EXISTS netflix;
-CREATE TABLE netflix
-(
-    show_id      VARCHAR(5),
-    type         VARCHAR(10),
-    title        VARCHAR(250),
-    director     VARCHAR(550),
-    casts        VARCHAR(1050),
-    country      VARCHAR(550),
-    date_added   VARCHAR(55),
-    release_year INT,
-    rating       VARCHAR(15),
-    duration     VARCHAR(15),
-    listed_in    VARCHAR(250),
-    description  VARCHAR(550)
-);
-```
+| Column Name    | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| `show_id`      | Unique ID for every Movie/TV Show                                           |
+| `type`         | The type of content - Movie or TV Show                                      |
+| `title`        | Title of the Movie/TV Show                                                  |
+| `director`     | Director of the Movie/TV Show                                               |
+| `cast`         | Main cast members of the Movie/TV Show                                      |
+| `country`      | Country where the Movie/TV Show was produced                                |
+| `date_added`   | Date when the Movie/TV Show was added to Netflix                            |
+| `release_year` | Year when the Movie/TV Show was originally released                         |
+| `rating`       | Rating of the Movie/TV Show                                                 |
+| `duration`     | Duration of the Movie in minutes or number of seasons for TV Shows          |
+| `listed_in`    | Genre(s) in which the Movie/TV Show is listed                               |
+| `description`  | Brief description of the Movie/TV Show                                      |
+
+---
+
 
 ## SQL Queries and Solutions
 
